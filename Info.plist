@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>RecordTimeLapse</string>
+    <key>CFBundleDisplayName</key>
+    <string>Record TimeLapse</string>
+    <key>CFBundleExecutable</key>
+    <string>RecordTimeLapse</string>
+
+    <!-- IMPORTANT: keep this bundle id STABLE. The Screen Recording TCC grant is keyed on
+         (bundle id + code-signing designated requirement). Changing the id, or signing ad-hoc
+         and rebuilding, revokes the permission on every build. -->
+    <key>CFBundleIdentifier</key>
+    <string>com.recvient.RecordTimeLapse</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+
+    <!-- Menu-bar / background app: no Dock icon, no main window. -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- Shown in the Screen Recording permission prompt. -->
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>Record TimeLapse captures periodic screenshots of your screen to build a time-lapse video.</string>
+
+    <key>NSHighResolutionCapable</key>
+    <true/>
+</dict>
+</plist>
